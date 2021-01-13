@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0; 
+	max-width: 100%;
+}
+
+li, a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*padding: 30px, 10%;*/
+	background-color: rgb(190,49,68); /* temporary attribute*/
+	margin: 0px;
+	border: 0px;
+}
+
+.nav_links {
+	list-style: none;
+	/*background-color: rgb(190,49,68);*/
+	padding-top: 10px;
+	padding-bottom:10px;
+
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px, 20px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+	color: white;
+	background-color: none;
+	border-color: none;
+	border: none;
+	border-radius: 40px;
+	padding: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease 0x;
+}
+
+.nav_links li a:hover {
+	background-color: white;
+	color: black;
+}
+
+.description_box {
+	display: flex;
+	width: 40em;
+	background: #EEEAE9;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto; /*centering the main body*/
+	padding-bottom: 40px;
+}
+
+.text {
+	font-family: "Montserrat", sans-serif;
+	margin-top: 25px;
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5vmin;
+}
+
+p {
+	text-align: justify;
+	line-height: 1.9;
+	margin-top: 10px;
+	font-size: 2vmin;
+}
+
+.left_photo {
+	max-width: 100%; /*make the photo responsive*/
+	align-self: center;
+	height: 140px;
+  	margin-top: 40px;
+  	/*background-color: red;*/
+}
+
+img {
+	border-radius: 50%;
+}
+
+.social-text {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	margin-top: 25px;
+	font-size: 2.5vmin;
+}
+
+#social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #545151;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Media*/
+
+@media (max-width: 414px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav_links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav_links li {
+		margin-top: 7px;
+		align-self: center;
+	}
+}
+
+/* Hamburger menu updated later*/
+
+
